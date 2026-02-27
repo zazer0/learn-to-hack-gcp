@@ -1,4 +1,4 @@
-# AI Security Bootcamp Implementation Plan
+# AI Security Lab Implementation Plan
 
 Context: "CloudAI Labs" - A model hosting platform (like Hugging Face) with security flaws
 
@@ -8,7 +8,7 @@ Context: "CloudAI Labs" - A model hosting platform (like Hugging Face) with secu
 - Use terraform files for deployment
 - Add simple Flask ML API
 
-### Student Experience
+### User Experience
 - ~30 minutes per module
 - Story → Attack → Fix
 - Visual diagrams provided
@@ -22,7 +22,7 @@ Context: "CloudAI Labs" - A model hosting platform (like Hugging Face) with secu
 ## Module 1: Enumeration and Discovery
 **Attack**:
 - Predictable bucket names: modeldata-{dev,prod}
-  - Student given 'modeldata-dev' bucket to start
+  - User is given 'modeldata-dev' bucket to start
 - Dev bucket has a 'bucket-service-account'.json
 - The 'bucket-service-account' has access to 'modeldata-prod' bucket
 - Hints:
@@ -34,7 +34,7 @@ Context: "CloudAI Labs" - A model hosting platform (like Hugging Face) with secu
 - Go to Cloud Storage → Select "cloudai-dev" bucket
   - Delete the service account json from the bucket
 - Go to IAM, Create new Service Account 'dev-bucket-sa'
-  - Student selects tf-preconfigured 'Dev Bucket Access' role
+  - User selects tf-preconfigured 'Dev Bucket Access' role
 
 **Engagement**: "CloudAI's 'secret' GPT-6 benchmarks leaked. No insider needed - how?"
 

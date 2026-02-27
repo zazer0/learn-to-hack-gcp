@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-This is an AI Security workshop for cloud security education, centered around "CloudAI Labs" - a fictional model hosting platform (similar to Hugging Face) with intentional security vulnerabilities. The workshop is an 8-hour experience with 4 progressive modules of increasing complexity (30 min, 1 hr, 2 hrs, 3 hrs) teaching cloud exploitation and remediation techniques specifically relevant to AI/ML workloads.
+A GCP security CTF project centered around "CloudAI Labs" - a fictional model hosting platform (similar to Hugging Face) with intentional security vulnerabilities. Contains 4 progressive modules of increasing complexity teaching cloud exploitation and remediation techniques relevant to AI/ML workloads.
 
 ## Essential Commands
 
@@ -94,8 +94,8 @@ Each module follows a "Story → Attack → Fix" workflow:
 
 ### Important Warnings
 - **NEVER deploy to production environments** - intentionally vulnerable
-- **For AI security education** - focuses on vulnerabilities specific to ML platforms
+- Contains intentional vulnerabilities specific to ML platforms
 - Requires GCP project with Owner permissions
 - All generated credentials stored in temporary_files/ (gitignored)
-- Always run challenge-destroy.sh after workshop completion
+- Always run challenge-destroy.sh after completing the challenges
 - Pre-configured gcloud CLI access required for simplified experience

@@ -1,7 +1,7 @@
-# CloudAI Labs Security Bootcamp: Module Overview & UI Integration Plan
+# CloudAI Labs Security Lab: Module Overview & UI Integration Plan
 
 ## Project Context
-CloudAI Labs is a fictional ML model hosting platform used to teach GCP security through hands-on exploitation. Students progress through 4 modules, each building on discoveries from the previous one.
+CloudAI Labs is a fictional ML model hosting platform used to demonstrate GCP security through hands-on exploitation. Users progress through 4 modules, each building on discoveries from the previous one.
 
 ## Learning Modules Overview
 
@@ -74,7 +74,7 @@ gsutil cp model.pkl gs://modeldata-dev-{PROJECT_ID}/
 gs://modeldata-prod-{PROJECT_ID}/
 """
 ```
-**Student Flow:** Visit docs → Copy bucket name → Use gsutil to explore
+**User Flow:** Visit docs → Copy bucket name → Use gsutil to explore
 
 #### Module 2: Status Page Path Traversal
 **URL:** `/status`  
@@ -89,7 +89,7 @@ deployments = [{
     }
 }]
 ```
-**Student Flow:** Access prod bucket (Module 1 creds) → Click tfstate link → Download and decode SSH key
+**User Flow:** Access prod bucket (Module 1 creds) → Click tfstate link → Download and decode SSH key
 
 #### Module 3: SSRF via Monitoring Form
 **URL:** `/monitoring`  
@@ -117,7 +117,7 @@ def check():
     <button>Check Status</button>
 </form>
 ```
-**Student Flow:** SSH to VM → Find monitoring URL → Select "token" option → Copy token from response
+**User Flow:** SSH to VM → Find monitoring URL → Select "token" option → Copy token from response
 
 #### Module 4: Admin Console with Token Validation
 **URL:** `/admin`  
@@ -143,7 +143,7 @@ def admin():
     except:
         return "Invalid token", 401
 ```
-**Student Flow:** Use Module 3 token → Access admin panel → See terraform-pipeline account → Test impersonation
+**User Flow:** Use Module 3 token → Access admin panel → See terraform-pipeline account → Test impersonation
 
 ### Implementation Phases
 
@@ -161,4 +161,4 @@ def admin():
 1. Deploy existing terraform infrastructure
 2. Run module setup scripts
 3. Deploy portal Cloud Function
-4. Students access via browser or terminal
+4. Users access via browser or terminal

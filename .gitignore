@@ -67,3 +67,6 @@ temporary_files/*
 
 # Python
 __pycache__
+
+# Local environment variables (copy from dot_envrc.example)
+.envrc

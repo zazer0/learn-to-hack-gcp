@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Debug script for flag-based module gating system
-# This helps instructors and students debug the file-based flag tracking
+# This helps debug the file-based flag tracking
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'

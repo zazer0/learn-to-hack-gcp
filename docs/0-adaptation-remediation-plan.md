@@ -1,4 +1,4 @@
-## Cloud Security Course Structure for AI Researchers
+## Cloud Security Lab Structure
 
 ### Key Modifications:
 - **Remove Challenge 1 & 2** (Kubernetes-dependent)
